@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api')
+      const response = await axios.get('https://deploytest-eo2j.onrender.com/api')
       setData(response.data.message)
     } catch (error) {
       console.error('Error fetching data:', error)
